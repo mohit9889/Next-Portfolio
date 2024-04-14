@@ -18,10 +18,10 @@ export default function Home() {
         <div className='container mx-auto'>
           {/* About Section */}
           <div className='container mx-auto mb-[30px] rounded-[10px] bg-neon-green px-[20px] py-[50px] md:px-[100px]'>
-            <h3 className='text-black-trinary mb-4 text-center font-humane text-[74px] font-bold leading-[65px]'>
+            <h3 className='mb-4 text-center font-humane text-[74px] font-bold leading-[65px] text-black-trinary'>
               About
             </h3>
-            <p className='text-black-trinary mb-4 text-[20px] leading-[25px] md:text-[26px] md:leading-[34px]'>
+            <p className='mb-4 text-[20px] leading-[25px] text-black-trinary md:text-[26px] md:leading-[34px]'>
               Hi there! I'm Mohit, a Frontend Developer with a passion for
               crafting user-centric experiences. I specialize in front-end
               development with expertise in HTML, CSS, JavaScript, React,

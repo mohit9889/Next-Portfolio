@@ -86,7 +86,7 @@ const SpecificProject = () => {
                 <div className='flex items-center gap-[10px]'>
                   {project.demoURL && (
                     <a
-                      className='text-black-trinary flex h-[50px] w-[226px] items-center justify-center rounded-[10px] bg-neon-green text-[18px] font-bold leading-[20px] md:h-[60px] md:text-[22px]'
+                      className='flex h-[50px] w-[226px] items-center justify-center rounded-[10px] bg-neon-green text-[18px] font-bold leading-[20px] text-black-trinary md:h-[60px] md:text-[22px]'
                       href={project.demoURL}
                       target='_blank'
                       rel='noopener noreferrer'
@@ -98,7 +98,7 @@ const SpecificProject = () => {
                     </a>
                   )}
                   <a
-                    className='text-black-trinary flex h-[50px] w-[226px] items-center justify-center rounded-[10px] bg-neon-green text-[18px] font-bold leading-[20px] md:h-[60px] md:text-[22px]'
+                    className='flex h-[50px] w-[226px] items-center justify-center rounded-[10px] bg-neon-green text-[18px] font-bold leading-[20px] text-black-trinary md:h-[60px] md:text-[22px]'
                     href={project.githubRepoUrl}
                     target='_blank'
                     rel='noopener noreferrer'
