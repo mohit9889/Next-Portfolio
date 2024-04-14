@@ -29,7 +29,7 @@ const SpecificProject = () => {
   return (
     <>
       <SEO
-        seoData={{ ...projectsPageSEO, title: `Project - ${project.title}` }}
+        seoData={{ ...projectsPageSEO, title: `Project - ${project?.title}` }}
       />
       <div className='container mx-auto text-white'>
         {project && (
@@ -50,14 +50,14 @@ const SpecificProject = () => {
               <div className='relative mr-0 max-w-[100%] md:w-max xl:mr-[40px] xl:max-w-[70%]'>
                 <Image
                   className='rounded-[10px]'
-                  src={project.background}
+                  src={project?.background}
                   height={457}
                   width={720}
                   alt='background'
                 />
                 <Image
                   className='absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 transform rounded-[10px]'
-                  src={project.cover}
+                  src={project?.cover}
                   height={408}
                   width={isSmScreen ? 320 : 600}
                   alt='background'
@@ -65,29 +65,29 @@ const SpecificProject = () => {
               </div>
               <div className='mt-4 flex max-w-[100%] flex-col xl:mt-0 xl:max-w-[30%]'>
                 <h3 className='mb-4 text-[30px] font-bold leading-[39px] md:text-[44px]'>
-                  {project.title}
+                  {project?.title}
                 </h3>
                 <span className='mb-4 text-[20px] font-medium leading-[22px] text-neon-green md:text-[25px]'>
-                  {project.techStack}
+                  {project?.techStack}
                 </span>
                 <p className='mb-4 text-[18px] leading-[28px] text-grey md:text-[21px]'>
-                  {project.description}
+                  {project?.description}
                 </p>
                 <span className='mb-[6px] text-[23px] font-bold leading-[23px] md:text-[27px]'>
                   Tech Stack
                 </span>
                 <div className='mb-4 flex gap-[10px]'>
-                  {Object.entries(project.technology).map(([key, value]) => (
+                  {Object.entries(project?.technology).map(([key, value]) => (
                     <Tooltip key={key} title={key}>
                       <span className='icon-45'>{value}</span>
                     </Tooltip>
                   ))}
                 </div>
                 <div className='flex items-center gap-[10px]'>
-                  {project.demoURL && (
+                  {project?.demoURL && (
                     <a
-                      className='flex h-[50px] w-[226px] items-center justify-center rounded-[10px] bg-neon-green text-[18px] font-bold leading-[20px] text-black-trinary md:h-[60px] md:text-[22px]'
-                      href={project.demoURL}
+                      className='text-black-trinary flex h-[50px] w-[226px] items-center justify-center rounded-[10px] bg-neon-green text-[18px] font-bold leading-[20px] md:h-[60px] md:text-[22px]'
+                      href={project?.demoURL}
                       target='_blank'
                       rel='noopener noreferrer'
                     >
@@ -98,8 +98,8 @@ const SpecificProject = () => {
                     </a>
                   )}
                   <a
-                    className='flex h-[50px] w-[226px] items-center justify-center rounded-[10px] bg-neon-green text-[18px] font-bold leading-[20px] text-black-trinary md:h-[60px] md:text-[22px]'
-                    href={project.githubRepoUrl}
+                    className='text-black-trinary flex h-[50px] w-[226px] items-center justify-center rounded-[10px] bg-neon-green text-[18px] font-bold leading-[20px] md:h-[60px] md:text-[22px]'
+                    href={project?.githubRepoUrl}
                     target='_blank'
                     rel='noopener noreferrer'
                   >
@@ -113,13 +113,13 @@ const SpecificProject = () => {
             </div>
 
             {/* Main Feature */}
-            {project.mainFeature && (
+            {project?.mainFeature && (
               <div className='mb-10 rounded-md bg-blue-dark px-[20px] py-6 md:px-[40px]'>
                 <h2 className='text-[30px] font-bold text-neon-green md:text-[44px]'>
                   Main Feature
                 </h2>
                 <ul className='list-disc'>
-                  {project.mainFeature.map((feature, index) => (
+                  {project?.mainFeature.map((feature, index) => (
                     <li key={index} className='mb-[11px] flex flex-col'>
                       <span className='text-[20px] font-bold leading-[39px] md:text-[30px]'>
                         {feature.title}
