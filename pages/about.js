@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import PageHeading from '@/components/PageHeading';
 import DocumentSvg from '@/public/svgs/document.svg';
+import { SocialURLS } from '@/constants/social';
 
 // Social Svg
 import GithubIcon from '@/public/svgs/social/github.svg';
@@ -136,15 +137,30 @@ const About = () => {
           </div>
         </div>
         <div className='mt-[30px] flex w-[100%] max-w-[100%] items-center justify-center gap-[15px] rounded-[10px] bg-blue-dark py-[30px] md:mt-0 md:w-[30%] md:max-w-[30%] md:py-0'>
-          <span className='icon-54 cursor-pointer'>
+          <a
+            href={SocialURLS.github}
+            target='_blank'
+            rel='noopener noreferrer'
+            className='icon-54 cursor-pointer'
+          >
             <GithubIcon />
-          </span>
-          <span className='icon-45 flex cursor-pointer'>
+          </a>
+          <a
+            href={SocialURLS.linkedin}
+            target='_blank'
+            rel='noopener noreferrer'
+            className='icon-45 flex cursor-pointer'
+          >
             <LinkedinIcon />
-          </span>
-          <span className='icon-57 cursor-pointer'>
+          </a>
+          <a
+            href={SocialURLS.instagram}
+            target='_blank'
+            rel='noopener noreferrer'
+            className='icon-57 cursor-pointer'
+          >
             <InstagramIcon />
-          </span>
+          </a>
         </div>
       </div>
     </div>

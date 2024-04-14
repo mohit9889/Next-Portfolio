@@ -78,18 +78,24 @@ const SpecificProject = () => {
                 ))}
               </div>
               <div className='flex items-center gap-[10px]'>
+                {project.demoURL && (
+                  <a
+                    className='text-black-trinary flex h-[50px] w-[226px] items-center justify-center rounded-[10px] bg-neon-green text-[18px] font-bold leading-[20px] md:h-[60px] md:text-[22px]'
+                    href={project.demoURL}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <span className='icon-31 mr-3'>
+                      <CodeSvg />
+                    </span>
+                    Demo
+                  </a>
+                )}
                 <a
                   className='text-black-trinary flex h-[50px] w-[226px] items-center justify-center rounded-[10px] bg-neon-green text-[18px] font-bold leading-[20px] md:h-[60px] md:text-[22px]'
-                  href='#'
-                >
-                  <span className='icon-31 mr-3'>
-                    <CodeSvg />
-                  </span>
-                  Demo
-                </a>
-                <a
-                  className='text-black-trinary flex h-[50px] w-[226px] items-center justify-center rounded-[10px] bg-neon-green text-[18px] font-bold leading-[20px] md:h-[60px] md:text-[22px]'
-                  href='#'
+                  href={project.githubRepoUrl}
+                  target='_blank'
+                  rel='noopener noreferrer'
                 >
                   <span className='icon-25 icon-black-trinary mr-3'>
                     <GithubSvg />

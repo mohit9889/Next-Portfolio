@@ -1,5 +1,5 @@
 export const SocialURLS = {
-  github: 'github.com',
-  linkedin: 'linkedin.com',
-  instagram: 'instagram.com',
+  github: 'https://github.com/mohit9889',
+  linkedin: 'https://www.linkedin.com/in/mohit-rajput-9a412014b/',
+  instagram: 'https://www.instagram.com/_rajmohit_/',
 };

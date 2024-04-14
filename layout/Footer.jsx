@@ -1,6 +1,7 @@
 import GithubIcon from '@/public/svgs/social/github.svg';
 import LinkedinIcon from '@/public/svgs/social/linkedin.svg';
 import InstagramIcon from '@/public/svgs/social/instagram.svg';
+import { SocialURLS } from '@/constants/social';
 
 const Footer = () => {
   return (
@@ -14,15 +15,30 @@ const Footer = () => {
           design stuff ❤️ This Website is made with the lot of love and passion.
         </span>
         <div className='mb-[25px] flex gap-[10px]'>
-          <span className='icon-54 cursor-pointer'>
+          <a
+            href={SocialURLS.github}
+            target='_blank'
+            rel='noopener noreferrer'
+            className='icon-54 cursor-pointer'
+          >
             <GithubIcon />
-          </span>
-          <span className='icon-45 flex cursor-pointer items-center justify-center'>
+          </a>
+          <a
+            href={SocialURLS.linkedin}
+            target='_blank'
+            rel='noopener noreferrer'
+            className='icon-45 flex cursor-pointer items-center justify-center'
+          >
             <LinkedinIcon />
-          </span>
-          <span className='icon-57 cursor-pointer'>
+          </a>
+          <a
+            href={SocialURLS.instagram}
+            target='_blank'
+            rel='noopener noreferrer'
+            className='icon-57 cursor-pointer'
+          >
             <InstagramIcon />
-          </span>
+          </a>
         </div>
         <div className='flex flex-col'>
           <span className='text-[18px] leading-[27px] md:text-[21px]'>

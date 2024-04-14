@@ -1,5 +1,6 @@
 import GithubIcon from '@/public/svgs/social/github.svg';
 import LinkedinIcon from '@/public/svgs/social/linkedin.svg';
+import { SocialURLS } from '@/constants/social';
 import styles from './styles.module.scss';
 
 const HeroHeader = () => {
@@ -57,12 +58,22 @@ const HeroHeader = () => {
           Currently Working as a Software Development Engineer{' '}
         </span>
         <div className='mt-4 flex items-center justify-center'>
-          <span className='icon-54 mr-[35px] cursor-pointer'>
+          <a
+            href={SocialURLS.github}
+            target='_blank'
+            rel='noopener noreferrer'
+            className='icon-54 mr-[35px] cursor-pointer'
+          >
             <GithubIcon />
-          </span>
-          <span className='icon-45 flex cursor-pointer items-center justify-center'>
+          </a>
+          <a
+            href={SocialURLS.linkedin}
+            target='_blank'
+            rel='noopener noreferrer'
+            className='icon-45 flex cursor-pointer items-center justify-center'
+          >
             <LinkedinIcon />
-          </span>
+          </a>
         </div>
       </div>
     </div>
