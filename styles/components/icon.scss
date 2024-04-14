@@ -1,0 +1,53 @@
+// Define mixin to set height and width
+@mixin set-dimensions($size) {
+  width: $size;
+  height: $size;
+}
+
+// Usage example
+.icon {
+  // Default height and width
+  svg {
+    @include set-dimensions(20px);
+  }
+  &-54 {
+    svg {
+      @include set-dimensions(54px);
+    }
+  }
+  &-45 {
+    svg {
+      @include set-dimensions(45px);
+    }
+  }
+  &-57 {
+    svg {
+      @include set-dimensions(57px);
+    }
+  }
+  &-30 {
+    svg {
+      @include set-dimensions(30px);
+    }
+  }
+  &-31 {
+    svg {
+      @include set-dimensions(31px);
+    }
+  }
+  &-25 {
+    svg {
+      @include set-dimensions(25px);
+    }
+  }
+  &-black-trinary {
+    svg path {
+      fill: #161b22;
+    }
+  }
+  &-white {
+    svg path {
+      fill: white;
+    }
+  }
+}

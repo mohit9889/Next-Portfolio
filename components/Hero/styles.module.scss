@@ -1,0 +1,13 @@
+.bg-text li {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px;
+}
+.left-box {
+  background: linear-gradient(90deg, #131313 22.51%, rgba(19, 19, 19, 0) 100%);
+  z-index: 1;
+}
+.right-box {
+  background: linear-gradient(270deg, #131313 22.51%, rgba(19, 19, 19, 0) 100%);
+
+  z-index: 1;
+}

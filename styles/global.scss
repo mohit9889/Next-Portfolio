@@ -1,0 +1,13 @@
+@import '~tailwindcss/base';
+@import '~tailwindcss/components';
+@import '~tailwindcss/utilities';
+
+@layer utilities {
+  .paused {
+    animation-play-state: paused;
+  }
+}
+
+// components
+@import './components/icon.scss';
+@import './components/HeroHeader.scss';
