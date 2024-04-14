@@ -49,7 +49,7 @@ const ProjectCard = ({ project = {} }) => {
                 <div
                   key={index}
                   aria-hidden={index === 1 ? 'true' : undefined}
-                  className='animate-infinite-scroll flex gap-[10px] '
+                  className='flex animate-infinite-scroll gap-[10px] '
                 >
                   {Object.entries(technology).map(([key, value]) => (
                     <Tooltip key={key} title={key}>

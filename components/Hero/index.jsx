@@ -16,14 +16,14 @@ const HeroHeader = () => {
       {/* Scrolling Text(L to R) */}
       <div className='inline-flex h-max w-full flex-nowrap overflow-hidden '>
         <ul
-          className={`${styles['bg-text']} animate-infinite-scroll flex items-center justify-center gap-x-[50px] md:justify-start`}
+          className={`${styles['bg-text']} flex animate-infinite-scroll items-center justify-center gap-x-[50px] md:justify-start`}
         >
           {Array(8)
             .fill(null)
             .map((_, index) => (
               <li
                 key={index}
-                className='font-bebasNeue  whitespace-nowrap text-[100px] font-normal leading-[150px] text-neon-green md:text-[200px] md:leading-[250px]'
+                className='whitespace-nowrap  font-bebasNeue text-[100px] font-normal leading-[150px] text-neon-green md:text-[200px] md:leading-[250px]'
               >
                 FRONTEND DEVELOPER
               </li>
@@ -33,14 +33,14 @@ const HeroHeader = () => {
       {/* Scrolling Text(R to L) */}
       <div className='inline-flex h-max w-full flex-nowrap overflow-hidden'>
         <ul
-          className={`${styles['bg-text']} animate-infinite-scroll-reverse flex items-center justify-center gap-x-[50px] md:justify-start`}
+          className={`${styles['bg-text']} flex animate-infinite-scroll-reverse items-center justify-center gap-x-[50px] md:justify-start`}
         >
           {Array(8)
             .fill(null)
             .map((_, index) => (
               <li
                 key={index}
-                className='font-bebasNeue whitespace-nowrap text-[100px] font-normal leading-[150px] text-neon-green md:text-[200px] md:leading-[250px]'
+                className='whitespace-nowrap font-bebasNeue text-[100px] font-normal leading-[150px] text-neon-green md:text-[200px] md:leading-[250px]'
               >
                 FRONTEND DEVELOPER
               </li>

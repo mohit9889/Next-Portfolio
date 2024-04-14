@@ -5,7 +5,7 @@ import { SocialURLS } from '@/constants/social';
 
 const Footer = () => {
   return (
-    <div className='max-500:px-0 container mx-auto'>
+    <div className='container mx-auto max-500:px-0'>
       <div className='flex flex-col items-center justify-center rounded-tl-[20px] rounded-tr-[20px] bg-blue-dark pb-[48px] pt-[81px] text-grey'>
         <span className='text-[100px] font-bold leading-[173px] text-white md:text-[133px]'>
           Mohit.

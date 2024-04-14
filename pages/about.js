@@ -90,7 +90,7 @@ const About = () => {
                 <ul
                   key={index}
                   aria-hidden={index === 1 ? 'true' : undefined}
-                  className='animate-infinite-scroll group-hover:paused flex items-center justify-center md:justify-start [&_img]:max-w-none [&_li]:mx-8'
+                  className='group-hover:paused flex animate-infinite-scroll items-center justify-center md:justify-start [&_img]:max-w-none [&_li]:mx-8'
                 >
                   <li>
                     <span className='icon-57'>

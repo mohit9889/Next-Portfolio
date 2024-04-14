@@ -4,7 +4,7 @@ const Contact = () => {
   };
 
   return (
-    <div className='text-black-trinary container mx-auto mb-[30px] flex flex-col rounded-[20px] bg-neon-green p-[20px] md:flex-row md:p-[55px]'>
+    <div className='container mx-auto mb-[30px] flex flex-col rounded-[20px] bg-neon-green p-[20px] text-black-trinary md:flex-row md:p-[55px]'>
       <div className='flex max-w-[100%] flex-col  md:max-w-[40%]'>
         <h1 className='font-humane text-[100px] font-bold leading-[100px] md:text-[141px] md:leading-[124px]'>
           Get in Touch
@@ -26,7 +26,7 @@ const Contact = () => {
             Name
           </label>
           <input
-            className='focus:ring-black-trinary focus:border-transparent h-[50px] rounded-[10px] p-[5px] focus:outline-none focus:ring-2'
+            className='focus:border-transparent h-[50px] rounded-[10px] p-[5px] focus:outline-none focus:ring-2 focus:ring-black-trinary'
             type='text'
             name='name'
             required
@@ -40,7 +40,7 @@ const Contact = () => {
             Email
           </label>
           <input
-            className='focus:ring-black-trinary focus:border-transparent h-[50px] rounded-[10px] p-[5px] focus:outline-none focus:ring-2'
+            className='focus:border-transparent h-[50px] rounded-[10px] p-[5px] focus:outline-none focus:ring-2 focus:ring-black-trinary'
             type='email'
             name='email'
             required
@@ -54,14 +54,14 @@ const Contact = () => {
             Message
           </label>
           <textarea
-            className=' focus:ring-black-trinary focus:border-transparent rounded-[10px] p-[5px] focus:outline-none focus:ring-2'
+            className=' focus:border-transparent rounded-[10px] p-[5px] focus:outline-none focus:ring-2 focus:ring-black-trinary'
             name='message'
             id=''
             rows='5'
           ></textarea>
         </div>
         <button
-          className=' bg-black-trinary h-[50px] w-[100%] rounded-[10px] text-[20px] font-medium leading-[32px] text-neon-green md:w-[70%] md:text-[25px]'
+          className=' h-[50px] w-[100%] rounded-[10px] bg-black-trinary text-[20px] font-medium leading-[32px] text-neon-green md:w-[70%] md:text-[25px]'
           type='submit'
         >
           Send
