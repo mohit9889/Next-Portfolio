@@ -9,13 +9,13 @@ Before you begin, make sure you have Node.js and npm installed on your machine.
 1. Clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/yourusername/nextjs-portfolio.git
+git clone https://github.com/mohit9889/Next-Portfolio.git
 ```
 
 2. Navigate to the project directory:
 
 ```bash
-cd nextjs-portfolio
+cd Next-Portfolio
 ```
 
 3. Install dependencies:
